@@ -86,7 +86,7 @@ function Contact() {
 
     let userPhno = phno;
     if(userPhno){
-      if(userPhno.length==10){
+      if(userPhno.length===10){
         SetValidPhnoError(false)
       } else {
         SetValidPhnoError(true)
@@ -100,16 +100,16 @@ function Contact() {
   const handleInput =(event) => {
     const id = event.target.id;
     const value = event.target.value;
-    if(id=='email') {
+    if(id==='email') {
       SetEmail(value)
     }
-    if(id == 'name'){
+    if(id === 'name'){
       SetName(value)
     }
-    if(id == 'password'){
+    if(id ==='password'){
       SetPassword(value)
     }
-    if(id == 'phno'){
+    if(id === 'phno'){
       SetPhno(value)
     }
   }
